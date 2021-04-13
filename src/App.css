@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  height: 4vh;
+  margin-bottom: 1vh;
+}
+
+.form-group {
+  flex-direction: row;
+}
+
+.btn {
+  margin-left: 2vw;
+}
