@@ -30,7 +30,7 @@ The backend uses the MVC pattern where the components are described as follows:
 - `controllers/eventcontroller.js`\ - The route callback functions. These functions convert requests into commands for the model and/or routes.
 - `models/event.js`\ - The database query functions. These are functions that run parameterised queries based on arguments.
 
-### `Frontend Structure`
+### Frontend Structure
 - `src/app.js`\ - The parent component fetching Api data that is to be used in every other components. Also, searching requests are sent to the custom Api from this component.
 - `src/TableContent/TableContent.jsx`\ - Table component rendering the custom Api data. Pagination is also operated on this component.
 - `src/TableHead/Table Header.jsx`\ - Table header component operating sorting function.
