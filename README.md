@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Introduction of this application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This PERN single page application shows events being held after April 15, 2021 in Indiana. To create this application, postgreSQL is used for database, backend is build on top of NodeJs with ExpressJs. Frontend is ReactJs, which is declarative, efficient, and flexible JavaScript library for building user interfaces. For web scraping, I used Cherrio which is a NodeJs library that helps interpreting and analyzing of the web page (https://www.visitindy.com/indianapolis-things-to-do-events) by using a jQuery-like syntax.
 
 ## Available Scripts
 
