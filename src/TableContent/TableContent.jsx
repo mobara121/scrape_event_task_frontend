@@ -78,7 +78,7 @@ const TableContent = ({events, geoLocationFetcher}) => {
                                 <TableCell style={{fontSize:'1.0rem'}}>
                                     {event.location}
                                 </TableCell>
-                                <TableCell style={{fontSize:'1.0rem'}}>
+                                <TableCell style={{textAlign: 'center', fontSize:'1.0rem'}}>
                                     <MapIcon onClick={()=>geoLocationFetcher(event.location)}/>
                                 </TableCell>
                                 <TableCell>

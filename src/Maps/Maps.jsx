@@ -55,8 +55,7 @@ const Maps=({address, lat, lng})=> {
         options={options}
         onLoad={onMapLoad}
       >
-          {places.map((marker) => (
-          
+          {places.map((marker) => (          
         <Marker        
           key={`${marker.location.lat * marker.location.lng}`}
           position={{

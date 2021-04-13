@@ -79,34 +79,34 @@ const App = () => {
   };
 
   useEffect(()=>{
-    // handleSubmit()
     fetchEvent()
     setFreeWord('')
     setZip('')
-    // geoLocationFetcher()
   }, [])
 
   return (
     <div className='App'>
       <h3 style={{fontSize: '3em'}}>Event Scrape</h3>
+      <div style={{width: '100%', display:'flex', height:'30px', marginBottom:'10px'}}>
       <Form className="form" onSubmit={(e)=>handleSubmitWord(e)}>
-        <FormGroup className="form-group">
-          <Label style={{fontSize:'1.2em', marginRight:'5px', lineHeight:'4vh'}}>
+        <FormGroup className="form-group" style={{justifyContent: 'center', flexDirection: 'row',}}>
+          <Label className='label'>
             Search by free word
           </Label>
-          <Input placeholder="ex. Dog" type="text" value={freeWord} onChange={(e)=>setFreeWord(e.target.value)}/>
-        </FormGroup>
-        <Button className="btn" type="submit" >Search</Button>              
+          <Input className='input' placeholder="ex. Dog" type="text" value={freeWord} onChange={(e)=>setFreeWord(e.target.value)}/>
+          <Button className="btn" type="submit" >Search</Button>
+        </FormGroup>                     
       </Form>
       <Form className="form"  onSubmit={(e)=>handleSubmitZip(e)}>
-        <FormGroup className="form-group">
-        <Label style={{fontSize:'1.2em',marginRight:'13px', lineHeight:'4vh'}}>
+        <FormGroup style={{flexDirection: 'row'}}>
+        <Label className='label'>
             Search by  zip code
           </Label>
-          <Input placeholder="ex. 46444" type="text" value={zip} onChange={(e)=>setZip(e.target.value)}/>
-        </FormGroup>
-        <Button type="submit" >Search</Button>              
+          <Input className='input'  placeholder="ex. 46444" type="text" value={zip} onChange={(e)=>setZip(e.target.value)}/>
+          <Button type="submit" >Search</Button>
+        </FormGroup>                      
       </Form>
+      </div>
       <TableContent events={events} eventMaps={eventMaps} geoLocationFetcher={geoLocationFetcher}/>
       <Maps address={address} lat={lat} lng={lng}/>    
     </div>
