@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/63912277/114592116-996c5180-9c58-11eb-850a-ad6aaf60191b.png)
+
 # Introduction of this application
 
 This PERN single page application shows events being held after April 15, 2021 in Indiana. To create this application, postgreSQL is used for database, backend is build on top of NodeJs with ExpressJs. Frontend is ReactJs, which is declarative, efficient, and flexible JavaScript library for building user interfaces. For web scraping, I used Cherrio which is a NodeJs library that helps interpreting and analyzing of the web page (https://www.visitindy.com/indianapolis-things-to-do-events) by using a jQuery-like syntax.
