@@ -6,11 +6,11 @@ This PERN single page application shows the events to be held after April 15, 20
 
 ## Technology stack
 
-`Database`\: postgreSQL
-`Backend`\: Node.js, Express.Js, Cheerio, fs, Sequelize
-`Frontend`\: React.js, Material-UI
-`Public Api`\: @react-google-maps/api
-`Deployment`\: Heroku/github
+- `Database`\: postgreSQL
+- `Backend`\: Node.js, Express.Js, Cheerio, fs, Sequelize
+- `Frontend`\: React.js, Material-UI
+- `Public Api`\: @react-google-maps/api
+- `Deployment`\: Heroku/github
 
 ### To run this application
 
